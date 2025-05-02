@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}About - Dabeey {% endblock %}
+
+{% block content %}
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="https://wallpapercave.com/wp/wp6412485.jpg" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 style="color: white;">Dabeey Mercy</h2>
+            <p style="color: white;">Aspiring Backend &amp; ML Developer</p>
+            <a href="{{ url_for('about') }}" class="btn-get-started">About Me</a>
+            <a href="{{ url_for('contact') }}" class="btn-get-started">Hire Me</a>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+  </main>
+
+{%endblock %}
+
+  
