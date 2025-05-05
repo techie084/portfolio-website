@@ -31,14 +31,16 @@
             <a href="{{ url_for('home') }}" class="logo d-flex align-items-center">
                 <h1 class="sitename">Dabeey</h1>
             </a>
+
+            <!-- updated html navigation bar to include the active  class -->
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li> 
-                    <li><a href="{{ url_for('resume') }}">Resume</a></li>
-                    <li><a href="{{ url_for('services') }}">Services</a></li>
-                    <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('home') }}" class="{% if request.path == url_for('home') %}active{% endif %}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}" class="{% if request.path == url_for('about') %}active{% endif %}">About</a></li>
+                    <li><a href="{{ url_for('resume') }}" class="{% if request.path == url_for('resume') %}active{% endif %}">Resume</a></li>
+                    <li><a href="{{ url_for('services') }}" class="{% if request.path == url_for('services') %}active{% endif %}">Services</a></li>
+                    <li><a href="{{ url_for('portfolio') }}" class="{% if request.path == url_for('portfolio') %}active{% endif %}">Portfolio</a></li>
+                    <li><a href="{{ url_for('contact') }}" class="{% if request.path == url_for('contact') %}active{% endif %}">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,6 +52,15 @@
     <footer id="footer" class="footer">
         <div class="container text-center">
             <p>© Copyright Dabeey - All Rights Reserved</p>
+    
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com/your-profile" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://discord.com/invite/your-invite" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
+                <a href="https://www.reddit.com/user/your-profile" target="_blank" class="reddit"><i class="bi bi-reddit"></i></a>
+                <a href="https://www.instagram.com/your-profile" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
         </div>
     </footer>
 </body>

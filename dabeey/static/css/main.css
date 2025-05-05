@@ -76,6 +76,42 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* footer social media icon */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  margin-top: 10px;
+}
+
+.social-links a {
+  font-size: 24px; /* Adjust icon size */
+  color: #6c757d; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.social-links a.linkedin:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.social-links a.twitter:hover {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.social-links a.discord:hover {
+  color: #5865f2; /* Discord purple */
+}
+
+.social-links a.reddit:hover {
+  color: #ff4500; /* Reddit orange */
+}
+
+.social-links a.instagram:hover {
+  color: #e4405f; /* Instagram pink */
+}
+
+
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
