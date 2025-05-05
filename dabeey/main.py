@@ -12,13 +12,23 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 app.template_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 
 # Configure app from environment variables
-app.secret_key = os.getenv('SECRET_KEY')
-app.config['MAIL_SERVER'] = os.getenv('MAIL_SERVER')
-app.config['MAIL_PORT'] = int(os.getenv('MAIL_PORT'))
-app.config['MAIL_USE_TLS'] = os.getenv('MAIL_USE_TLS').lower() in ['true', '1', 't']
-app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
-app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
-app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
+app.secret_key = os.environ['SECRET_KEY']  # Using [] instead of getenv for required vars
+
+# Email configuration with defaults
+app.config.update(
+    MAIL_SERVER=os.getenv('MAIL_SERVER', 'smtp.gmail.com'),
+    MAIL_PORT=int(os.getenv('MAIL_PORT', 587)),
+    MAIL_USE_TLS=os.getenv('MAIL_USE_TLS', 'true').lower() in ['true', '1', 't'],
+    MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
+    MAIL_PASSWORD=os.getenv('MAIL_PASSWORD'),
+    MAIL_DEFAULT_SENDER=os.getenv('MAIL_DEFAULT_SENDER', os.getenv('MAIL_USERNAME'))
+)
+
+# Validate minimum config
+if not app.secret_key:
+    raise ValueError("No SECRET_KEY set for Flask application")
+if not app.config['MAIL_USERNAME'] or not app.config['MAIL_PASSWORD']:
+    raise ValueError("MAIL_USERNAME and MAIL_PASSWORD must be set for Flask-Mail")
 
 mail = Mail(app)
 
