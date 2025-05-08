@@ -1,4 +1,3 @@
-markdown
 # Portfolio Website
 
 ![Project Banner](assets/banner.png) <!-- Optional banner image -->
@@ -6,13 +5,14 @@ markdown
 A modern portfolio website built with Python, showcasing my projects, skills, and professional background.
 
 ## ✨ Live Demo
+
 [View Live Portfolio](https://yourusername.github.io/portfolio-website/) <!-- Update with your URL -->
 
 ## 🛠️ Technologies Used
-- **Backend**: 
+
+- **Backend**:
   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white) <!-- or Django -->
-  
 - **Frontend**:
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -25,21 +25,30 @@ A modern portfolio website built with Python, showcasing my projects, skills, an
 ## 📦 Installation
 
 ### Prerequisites
+
 - Python 3.8+
 - pip package manager
 
 ### Setup Instructions
+
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Dabeey/portfolio-website.git
    cd your-repo
+   ```
+
 Create and activate virtual environment:
 
 bash
 python -m venv venv
-# On Windows:
+
+## On Windows
+
 venv\Scripts\activate
-# On macOS/Linux:
+
+## On macOS/Linux
+
 source venv/bin/activate
 Install dependencies:
 
@@ -53,21 +62,24 @@ Add your configuration values
 
 🚀 Running the Application
 bash
-# Development mode
-python app.py  # or whatever your main file is called
 
-# Production (if applicable)
+## Development mode
+
+python app.py # or whatever your main file is called
+
+## Production (if applicable)
+
 gunicorn app:app -w 4 -b 0.0.0.0:8000
 📂 Project Structure
 portfolio-website/
-├── app/                      # Main application folder
-│   ├── static/               # CSS, JS, images
-│   ├── templates/            # HTML templates
-├── .env.example              # Environment variables template
-├── .gitignore                # Git ignore rules
-├── requirements.txt          # Dependencies
-├── main.py                    # Main application file
-└── README.md                 # This file
+├── app/ # Main application folder
+│ ├── static/ # CSS, JS, images
+│ ├── templates/ # HTML templates
+├── .env.example # Environment variables template
+├── .gitignore # Git ignore rules
+├── requirements.txt # Dependencies
+├── main.py # Main application file
+└── README.md # This file
 
 🌟 Features
 Responsive Design: Works on all devices
@@ -97,7 +109,6 @@ Open a Pull Request
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 📬 Contact
-Dabeey - @yourtwitter - abbasdaughter18@gmail.com
+Dabeey - @yourtwitter - <abbasdaughter18@gmail.com>
 
-Project Link: https://github.com/Dabeey/portfolio-website.git
-
+Project Link: <https://github.com/Dabeey/portfolio-website.git>

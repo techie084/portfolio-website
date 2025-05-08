@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- language formatting  -->
+    <meta charset="UTF-8" />
+    <!-- display based on users device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- linking javaScript file -->
+    <script defer src="script.js"></script>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="static/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/apple-touch-icon.png" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+        <!-- Vendor CSS Files -->
+        <link
+        href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}"
+        rel="stylesheet"
+      />
+      <link
+        href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}"
+        rel="stylesheet"
+      />
+  
+      <!-- Main CSS File -->
+      <link
+        href="{{ url_for('static', filename='css/main.css') }}"
+        rel="stylesheet"
+      />
+    <title>Dabeey</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+     <header>
+      <nav class="nav-bar">
+        <li class="logo"><a href="/">Dabeey</a></li>
+        <ul>
+          <span>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Resume</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </span>
+        </ul>
+      </nav>
+     </header>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <img
+          src="https://wallpapercave.com/wp/wp6412485.jpg"
+          alt=""
+          data-aos="fade-in"
+        />
+
+        <div
+          class="container text-center"
+          data-aos="zoom-out"
+          data-aos-delay="100"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 style="color: white">Dabeey Mercy</h2>
+              <p style="color: white">Aspiring Backend &amp; ML Developer</p>
+              <a href="{{ url_for('about') }}" class="btn-get-started"
+                >About Me</a
+              >
+              <a href="{{ url_for('contact') }}" class="btn-get-started"
+                >Hire Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+    </main>
+
+    <!-- About Section -->
+    <main id="about class="main">
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>❤Your Favorite Backend Girl❤</p>
+          <!-- <p>Backend Engineer Integrating Machine Learning Solutions</p> -->
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img src="static/img/profile-img.jpeg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 content">
+              <h2>Aspiring Backend &amp; ML Developer.</h2>
+              <p class="fst-italic py-3">
+                I’m Dabeey, a purpose-driven backend developer with a growing
+                interest in machine learning. I specialize in Python-based
+                development using Flask, SQLite, and OOP. While I continue
+                mastering ML and data science, I currently build backend systems
+                that are functional, clean, and ready for intelligent
+                integration.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>21 April 2004</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Website:</strong> <span>www.dabeey.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+234 912 121 6888</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Enugu, Nigeria.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <span>21</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong>
+                      <span> Currently pursuing a BSc in Statistics</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>abbasdaughter18@example.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Freelance:</strong> <span>Available</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+                With a learner’s mindset and a creator’s discipline, I’m
+                building toward intelligent systems that serve real-world needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>Technologies Powering My Backend and ML Journey</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>Python</span> <i class="val">80%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Object-Oriented Programming (OOP)</span>
+                  <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>JSON & CSV Handling</span> <i class="val">75%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Selenium (Automation)</span>
+                  <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>HTML & CSS</span> <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>JavaScript (Basic) </span> <i class="val">40%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 40%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Data Science (In Progress)</span>
+                  <i class="val">50%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>Flask</span> <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>SQLite</span> <i class="val">75%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Git & GitHub</span> <i class="val">60%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Tkinter (GUI)</span> <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Bootstrap</span> <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Machine Learning (Beginner)</span>
+                  <i class="val">50%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Stats Section -->
+      <section id="stats" class="stats section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Facts</h2>
+          <p>Key Metrics And Achievements</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="232"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                  >12+</span
+                >
+                <p>Technologies</p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="521"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                  >9+</span
+                >
+                <p>Projects</p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="1453"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                  >500+</span
+                >
+                <p>Hours Of Coding</p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="32"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                  >5+</span
+                >
+                <p>Collaborations with AI Tools</p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Stats Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>Acknowledgement From The Developer Community</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="https://www.kindpng.com/picc/m/655-6553355_software-developer-hd-png-download.png"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Tech Mentor</h3>
+                  <!-- <h4> put the job title here and name of the person above</h4> -->
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Dabeey's attention to detail and problem-solving ability
+                      is second to none. Their approach to backend development
+                      shows a commitment to quality and scalability.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="https://img.freepik.com/premium-photo/3d-pixar-character-xu-cartoon-style-with-glasses-sportswear_899449-58451.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Senior Backend Engineer</h3>
+                  <!-- <h4>Designer</h4> -->
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Dabeey demonstrates a rare blend of consistency,
+                      curiosity, and technical growth. Their commitment to
+                      backend development and continuous learning is evident in
+                      every line of code.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="https://img.favpng.com/25/1/17/avatar-user-computer-icons-software-developer-png-favpng-7SbFpNeqKqhhTrrrnHFUqk6U4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Tech Community Member</h3>
+                  <!-- <h4>Store Owner</h4> -->
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >I’ve seen Dabeey’s progress and growth firsthand. Their
+                      passion for learning and creating truly shines through in
+                      every project they undertake.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="https://lumenor.ai/cdn-cgi/imagedelivery/F5KOmplEz0rStV2qDKhYag/e29bfb12-d5c9-41d2-5025-6dfa9429d200/source"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Fellow Developer</h3>
+                  <!-- <h4>Freelancer</h4> -->
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span
+                      >Dabeey has the drive and dedication to make a real impact
+                      in the backend development and machine learning space.
+                      Their projects are consistently well-structured and easy
+                      to build upon.</span
+                    >
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
+    </main>
+
+    <!-- resume Section -->
+    <main class="main">
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>
+            A snapshot of my technical foundation, ongoing growth, and hands-on
+            experience in backend development and machine learning.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Summary</h3>
+
+              <div class="resume-item pb-0">
+                <h4>Dabeey Mercy</h4>
+                <p>
+                  <em
+                    >Innovative and deadline-driven Backend Developer with 1+
+                    year of experience in Python, Flask, and SQLite, building
+                    scalable, clean systems. Currently enhancing skills in
+                    machine learning and data science, with a focus on
+                    developing intelligent solutions from concept to
+                    deployment.</em
+                  >
+                </p>
+                <ul>
+                  <li>Enugu, Nigeria.</li>
+                  <li>+234 912 161 2888</li>
+                  <li>abbasdaughter18@gmail.com</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Science in Statistics</h4>
+                <h5>2024 - Ongoing</h5>
+                <p>
+                  <em
+                    >Enugu State Institute of Science and Technology,
+                    Nigeria.</em
+                  >
+                </p>
+                <p>
+                  Currently pursuing a Bachelor of Science in Statistics,
+                  building a strong foundation in data analysis, probability,
+                  and statistical modeling—skills that support my growth in
+                  machine learning and backend development.
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Backend Development & Machine Learning</h4>
+                <h5>2024 – Present</h5>
+                <p><em>Self-Taught & Mentored</em></p>
+                <p>
+                  Studied Python, Flask, SQLite, OOP, and foundational ML/DS
+                  concepts. Built multiple backend projects and integrated
+                  intelligent features. Learning via Udemy, community
+                  mentorship, and hands-on practice.
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Freelance Backend Developer</h4>
+                <h5>2024 - Present</h5>
+                <ul>
+                  <li>
+                    Developed and maintained backend systems using Flask and
+                    SQLite.
+                  </li>
+                  <li>
+                    Applied OOP principles and best practices for maintainable
+                    codebases.
+                  </li>
+                  <li>
+                    Built personal projects, including data integration with ML
+                    readiness.
+                  </li>
+                  <li>
+                    Collaborated with AI tools for ideation, debugging, and
+                    efficiency.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <h3 class="resume-title">Certificates &amp; Ongoing Learning</h3>
+              <div class="resume-item">
+                <ul>
+                  <li>Python 100 Days of Code – Udemy</li>
+                  <li>Flask & Backend APIs – Self-Paced Projects</li>
+                  <li>Machine Learning Foundations – Ongoing</li>
+                  <li>Data Science Labs - World Quant University</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+    </main>
+
+    <!-- portfolio Section -->
+    <main class="main">
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Projects That Reflect Growth, Skill and Purpose</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Card</li>
+              <li data-filter=".filter-branding">Web</li>
+            </ul>End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-4.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-4.jpg"
+                    title="App 2"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-5.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-5.jpg"
+                    title="Product 2"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-6.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-7.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-7.jpg"
+                    title="App 3"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-8.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-8.jpg"
+                    title="Product 3"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img
+                  src="static/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>More details soon</p>
+                  <a
+                    href="static/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+      <!-- Portfolio Details Section -->
+    <main class="main">
+      <section id="portfolio-details" class="portfolio-details section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio Details</h2>
+          <p>Projects That Reflect Growth, Skill and Purpose</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="{{ url_for('static', filename='img/portfolio/app-1.jpg') }}"
+                      alt="App Project"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="{{ url_for('static', filename='img/portfolio/product-1.jpg') }}"
+                      alt="Product Project"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="{{ url_for('static', filename='img/portfolio/branding-1.jpg') }}"
+                      alt="Branding Project"
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="{{ url_for('static', filename='img/portfolio/books-1.jpg') }}"
+                      alt="Books Project"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="portfolio-info"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Web design</li>
+                  <li><strong>Client</strong>: ASU Company</li>
+                  <li><strong>Project date</strong>: 01 March, 2020</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="#">https://github.com/Dabeey</a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="portfolio-description"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2>Dabeey's Magic Backend Project</h2>
+                <p>Yes!!!! On the way guyssss!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
+
+    <!-- contact Section -->
+    <main class="main">
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Let's Build Something Together</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Enugu, Nigeria.</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+234 912 161 2888</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>abbasdaughter18@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+                <!-- <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.317217600972!2d7.488845274995847!3d6.452253793503527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3d6e9b93f0d%3A0xfd1e3e4a33a4e4c9!2sMichael%20Okpara%20Square!5e0!3m2!1sen!2sng!4v1717344891239!5m2!1sen!2sng"
+                  width="100%"
+                  height="270"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe> -->
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form
+                action="https://formspree.io/f/xovddoay"
+                method="POST"
+                class="php-email-form"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row gy-4">
+                  <!-- Name Field -->
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-field"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email-field"
+                      required
+                    />
+                  </div>
+
+                  <!-- Subject Field -->
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject-field"
+                      required
+                    />
+                  </div>
+
+                  <!-- Message Field -->
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="10"
+                      id="message-field"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- Form Status Messages -->
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <!-- base Section -->
+    <header id="header" class="header sticky-top">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a href="{{ url_for('home') }}" class="logo d-flex align-items-center">
+          <h1 class="sitename">Dabeey</h1>
+        </a>
+
+        <!-- updated html navigation bar to include the active  class -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a
+                href="{{ url_for('home') }}"
+                class="{% if request.path == url_for('home') %}active{% endif %}"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ url_for('about') }}"
+                class="{% if request.path == url_for('about') %}active{% endif %}"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ url_for('resume') }}"
+                class="{% if request.path == url_for('resume') %}active{% endif %}"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ url_for('services') }}"
+                class="{% if request.path == url_for('services') %}active{% endif %}"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ url_for('portfolio') }}"
+                class="{% if request.path == url_for('portfolio') %}active{% endif %}"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ url_for('contact') }}"
+                class="{% if request.path == url_for('contact') %}active{% endif %}"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <footer id="footer" class="footer">
+      <div class="container text-center">
+        
+        <!-- Social media links -->
+        <div class="social-links">
+          <a
+          href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            href="https://twitter.com/your-profile"
+            target="_blank"
+            class="twitter"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a
+            href="https://discord.com/invite/your-invite"
+            target="_blank"
+            class="discord"
+            ><i class="bi bi-discord"></i
+          ></a>
+          <a
+          href="https://www.reddit.com/user/your-profile"
+          target="_blank"
+          class="reddit"
+          ><i class="bi bi-reddit"></i
+            ></a>
+            <a
+            href="https://www.instagram.com/your-profile"
+            target="_blank"
+            class="instagram"
+            ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <p>© Copyright Dabeey - All Rights Reserved</p>
+          </div>
+    </footer>
+  </body>
+</html>
